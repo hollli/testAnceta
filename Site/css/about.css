@@ -1,0 +1,406 @@
+* {
+  font-family: Montserrat, serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #EEEEEE; /* Backup color */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Header (START)*/
+.div-header {
+  position: relative;
+  width: 100%;
+  height: 5em;
+  background: #EEEEEE;
+  padding: 1em;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding: 0 7%;
+  display: grid;
+}
+
+.sticky + .content {
+  padding-top: 100px;
+}
+
+nav {
+  display: grid;
+  align-items: center;
+  height: 65px;
+  width: 100%;
+  grid-template-columns: 10em 10em 10em 25em 28em;
+
+}
+
+.nav-links li a:hover {
+  color: #FD7014;
+}
+
+.nav-links {
+  width: 400px;
+  display: contents;
+}
+
+.nav-link:hover {
+  color: #FD7014;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0.5% 3%;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  display: grid;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #222831;
+  align-items: center;
+  transition-duration: 0.4s;
+}
+
+#logo {
+  margin-left: auto;
+  text-decoration: none;
+  margin-left: auto;
+  text-decoration: none;
+  display: grid;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 40px;
+  color: #FD7014;
+  align-items: center;
+}
+
+.nav-bar {
+  height: 1px;
+  margin-top: 20px;
+  white: 100%;
+  background: #393E46;
+}
+
+.nav-link {
+  margin-left: auto;
+  margin-right: 3%;
+  text-decoration: none;
+  margin-left: auto;
+  text-decoration: none;
+  display: grid;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #222831;
+  align-items: center;
+  transition-duration: 0.4s;
+}
+
+/*Header (END)*/
+
+/*Footer start*/
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 15em;
+  background: #EEEEEE;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 35em 28em 20em 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-element-logo {
+}
+
+#footer-logo {
+  height: 75px;
+  width: 125px;
+  margin-left: 14%;
+  content: url(../img/chdtulogo.png);
+}
+
+.footer-element-data {
+  text-align: center;
+}
+
+#f-el-d-1 {
+  color: #222831;
+  font-size: 1em;
+  text-align: left;
+}
+
+#f-el-d-2 {
+  color: #222831;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.footer-element-onTop {
+  color: #FD7014;
+  font-size: 1.1em;
+  font-weight: 1000;
+  letter-spacing: -1px;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  transition-duration: 0.4s;
+}
+
+.footer-element-onTop:hover{
+  color: #222831;
+}
+/*Footer (END)*/
+.logo {
+  height: 30px;
+  margin-left: 14%;
+  content: url(../img/chdtulogo.png);
+}
+
+.nav-bar {
+  height: 1px;
+  white: 100%;
+  background: #2f2f2f;
+}
+
+.nav-link {
+  margin-left: auto;
+  margin-right: 3%;
+  text-decoration: none;
+  margin-left: auto;
+  text-decoration: none;
+  display: grid;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #222831;
+  align-items: center;
+}
+
+/*Header (END)*/
+
+/*body elements (START)*/
+
+#group-1 {
+  display: grid;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
+  justify-items: center;
+  grid-template-columns: 45em 45em;
+  min-height: 38.4375em;
+}
+
+.author-card {
+  display: flex;
+  width: 30em;
+  height: 90em;
+  margin: 33px;
+  box-shadow: 0em 0em 1em 0.1em #222831;
+  align-items: center;
+  justify-items: center;
+  border-radius: 6.25em;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
+  transition: all .2s;
+}
+
+.author-card a {
+  box-sizing: border-box;
+  color: #222831;
+  letter-spacing: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+}
+
+.author-card p {
+  box-sizing: border-box;
+  color: #FD7014;
+  letter-spacing: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+}
+
+.author-logo {
+  height: 8.375em;
+  width: 8.375em;
+  background-color: #222831;
+  margin-top: 3.25em;
+  border-radius: 15em;
+}
+
+#author-logo-0 {
+  height: 8.375em;
+  width: 8.375em;
+  border-radius: 15em;
+  content: url(../img/autor-logo-0.jpg);
+  object-fit: cover;
+}
+
+#author-logo-1 {
+  height: 8.375em;
+  width: 8.375em;
+  border-radius: 15em;
+  content: url(../img/autor-logo-1.jpg);
+  object-fit: cover;
+}
+
+
+#author-logo-2 {
+  height: 8.375em;
+  width: 8.375em;
+  border-radius: 15em;
+  content: url(../img/autor-logo-4.jpg);
+  object-fit: cover;
+}
+
+#author-logo-3 {
+  height: 8.375em;
+  width: 8.375em;
+  border-radius: 15em;
+  content: url(../img/autor-logo-2.jpg);
+  object-fit: cover;
+}
+
+
+#author-logo-4 {
+  height: 8.375em;
+  width: 8.375em;
+  border-radius: 15em;
+  content: url(../img/autor-logo-3.jpg);
+  object-fit: cover;
+}
+
+#author-logo-5 {
+  height: 8.375em;
+  width: 8.375em;
+  border-radius: 15em;
+  content: url(../img/author-logo-5.jpg);
+  object-fit: cover;
+}
+
+#author-logo-6 {
+  height: 8.375em;
+  width: 8.375em;
+  border-radius: 15em;
+  content: url(../img/author-logo-6.jpg);
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: 1.5625em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+
+.author-elem-groups {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 13em 13em;
+}
+
+.element {
+  width: 10em;
+  height: 3em;
+  box-shadow: 0em 0em 0em 0.1em #222831;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-top: 1.8em;
+  border-radius: 5em;
+}
+
+.author-exp {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-top: 1.3em;
+  margin-bottom: 0em;
+}
+
+.author-workingWith {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-top: 1.3em;
+  margin-bottom: 0em;
+}
+
+.author-workingWith {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-top: 1.3em;
+  margin-bottom: 0em;
+}
+
+.status_bar_a {
+  box-sizing: border-box;
+  color: #222831;
+  letter-spacing: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+}
+
+.status_bar {
+  height: 1em;
+  width: 25.9375em;
+  background-color: #222831;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 2.25em;
+}
+
+.status_bar div {
+  background-color: #FD7014;
+  height: 100%;
+  border-radius: 2.25em;
+}
+
+#skills-0 {
+  margin-top: 20px;
+}
+
+#skills-1 {
+  margin-top: 20px;
+}
+
+#skills-2 {
+  margin-top: 20px;
+}
+
+#skills-3 {
+  margin-top: 20px;
+}
+
+#skills-4 {
+  margin-top: 20px;
+}
+#skills-5{
+  margin-top: 20px;
+}
+
+
+/*body elements (END)*/
