@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application324</string>
+    <string name="app_name">Test Anceta</string>
     <string name="what_is_the_result_of_this_code_n_public_static_void_main_string_args_nsystem_out_println_1_0_0_n">What is the result of this code? \n public static void main(String[] args) { \nSystem.out.println(1.0 / 0); \n}</string>
     <string name="what_is_the_result_of_this_code_npublic_static_void_main_string_args_nint_sum_0_nfor_int_i_1_i_3_sum_i_nsystem_out_println_sum_n"><![CDATA[What is the result of this code? \npublic static void main(String[] args) { \nint sum = 0; \nfor (int i = 1; i <= 3; sum += i++) ; \nSystem.out.println(sum); \n}]]></string>
 </resources>

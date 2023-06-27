@@ -104,16 +104,18 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
                         rad5 = 2;
                     }
                 });
+                Toast toast = Toast.makeText(MainActivity.this,"Sorry, you didn't pass", Toast.LENGTH_LONG);
+                toast.show();
                 myPoint= box1+box2+box3+rad1+rad2+rad3+rad4+rad5;
 //                age = 30;
                 agee = Integer.parseInt((age.getText()).toString());
-                if(myPoint>9&&seekBar.getProgress()<1600&&agee>21&&agee<40&&seekBar.getProgress()>800){
-                    Toast toast = Toast.makeText(MainActivity.this,"Grac, u passed, ur point "+myPoint, Toast.LENGTH_LONG);
-                    toast.show();
-                } else{
-                    Toast toast = Toast.makeText(MainActivity.this,"Sorry, you didn't pass, ur point "+myPoint, Toast.LENGTH_LONG);
-                    toast.show();
-                }
+//                if(myPoint>9&&seekBar.getProgress()<1600&&agee>21&&agee<40&&seekBar.getProgress()>800){
+//                    Toast toast = Toast.makeText(MainActivity.this,"Grac, u passed", Toast.LENGTH_LONG);
+//                    toast.show();
+//                } else{
+//                    Toast toast = Toast.makeText(MainActivity.this,"Sorry, you didn't pass", Toast.LENGTH_LONG);
+//                    toast.show();
+//                }
             }
         });
     }
